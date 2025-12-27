@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu Lecții Geometrie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #0f2557 0%, #1a3a6b 100%);
+            color: #e8e8e8;
+            padding: 20px 15px;
+            line-height: 1.6;
+        }
+        
+        .section-title {
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 25px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .section-title:first-child {
+            margin-top: 0;
+        }
+        
+        .subsection-title {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin: 15px 0 10px 0;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            border-left: 3px solid #4a90e2;
+        }
+        
+        .menu-table {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        
+        .menu-item {
+            background: rgba(230, 230, 230, 0.95);
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border-left: 3px solid #4a90e2;
+        }
+        
+        .menu-item:hover {
+            background: rgba(240, 240, 240, 1);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .menu-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu-item li {
+            margin: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .menu-item li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        
+        .menu-item a {
+            color: #000066;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+        
+        .menu-item a:hover {
+            color: #4a90e2;
+            text-decoration: underline;
+        }
+        
+        .video-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .video-link::before {
+            content: "🎥";
+            margin-right: 5px;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #4a90e2;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5ba3ff;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+            
+            .section-title {
+                font-size: 1rem;
+            }
+            
+            .subsection-title {
+                font-size: 0.9rem;
+            }
+            
+            .menu-item {
+                padding: 10px 12px;
+            }
+            
+            .menu-item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section-title">Lecții interactive</div>
+    
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="prlgr/index.html" target="_new">Paralelogramul</a></li>
+                <li><a href="linmijl/index.html" target="_new">Linia mijlocie-triunghi</a></li>
+                <li><a href="drpt/index.html" target="_new">Dreptunghiul</a></li>
+                <li><a href="romb/index.html" target="_new">Rombul</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="patrat/patrat.html" target="intro">Pătratul-1</a></li>
+                <li><a href="patrat/testptr.html" target="intro">Pătratul-2</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="trapezul/index.html" target="_new">Trapezul</a></li>
+                <li><a href="trapezul/linmijl/index.html" target="_new">Trapezul-linia mijlocie</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="subsection-title">Arii</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="arii/index.html" target="_new">Formule</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="subsection-title">Cercul</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=mdhH88LgVdY" target="new" class="video-link">Explicații video</a></li>
+                <li><a href="cercul/index.html" target="_new">Definiții</a></li>
+                <li><a href="dfncerc/index.html" target="intro">Aplicații</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="cercul/poz/index.html" target="intro">Poziții: dreapta-cerc</a></li>
+                <li><a href="pozcerc/pozcerc.html" target="intro">Poziții: cerc-cerc</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="cercul/teo1/index.html" target="new">Teoreme-1</a></li>
+                <li><a href="cercul/teo2/index.html" target="new">Teoreme-2</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Inscriptibil</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="circum/index.html" target="new">Def/Teoreme</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Poligoane regulate</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="inscris/index.html" target="new">Definiții</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Asemănare</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="asem/index.html" target="_new">Teorema lui Thales</a></li>
+                <li><a href="tbis/index.html" target="_new">Teorema bisectoarei</a></li>
+                <li><a href="asemn/asemdef.html" target="intro">Definiție</a></li>
+                <li><a href="tfa/index.html" target="_new">T. F. A.</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="tfa/asemcaz.html" target="_new">Cazuri de asemănare</a></li>
+                <li><a href="asemn/asemlul.html" target="intro">Cazul L. U. L.</a></li>
+                <li><a href="asemn/asemulu.html" target="intro">Cazul U. U.</a></li>
+                <li><a href="asemn/asemlll.html" target="intro">Cazul L. L. L.</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-item">
+            <ul>
+                <li><a href="asem/thales.html" target="intro">Thales</a></li>
+                <li><a href="tfa/teorema/index.html" target="_new">Linii importante</a></li>
+                <li><a href="asemn/inalt.html" target="intro">Aplicație (1)</a></li>
+                <li><a href="asemn/distpom.html" target="intro">Aplicație (2)</a></li>
+                <li><a href="tmen/index.html" target="_new">Menelaos/Ceva</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Relații metrice</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="proiect/proiectdr1.html" target="intro">Proiecții (1)</a></li>
+                <li><a href="proiect/proiectdr2.html" target="intro">Proiecții (2)</a></li>
+                <li><a href="relmet/index.html" target="_new">Teoreme</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-title">Suport teoretic</div>
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="teorie/breviar.pdf" target="intro">- breviar teoretic</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="menu-table">
+        <div class="menu-item">
+            <ul>
+                <li><a href="intro.html" target="intro">Introducere</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
