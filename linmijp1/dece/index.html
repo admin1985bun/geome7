@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Două Pagini Web</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex; /* Asigură afișarea elementelor una lângă alta */
+            flex-direction: row; /* Elemente pe rânduri, nu pe coloane */
+            height: 100vh; /* Ocupă întreaga înălțime a ecranului */
+        }
+        .column {
+            height: 100%; /* Ocupă întreaga înălțime a containerului */
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .left {
+            flex: 0 0 50%; /* 40% din lățimea totală */
+        }
+        .right {
+            flex: 0 0 50%; /* 60% din lățimea totală */
+        }
+        iframe {
+            width: 100%; /* Asigură lățimea completă a coloanei */
+            height: 100%; /* Asigură înălțimea completă a coloanei */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="column left">
+        <iframe src="stanga.html"></iframe>
+    </div>
+    <div class="column right">
+        <iframe src="plimba.html"></iframe>
+    </div>
+</body>
+</html>
